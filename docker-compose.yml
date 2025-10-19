@@ -11,6 +11,7 @@ services:
       - "5000:5000"
     environment:
       - FLASK_ENV=development
+      - DATABASE_URL=postgresql://postgres:devcontainer@db:5432/postgres
     depends_on:
       - db
 
